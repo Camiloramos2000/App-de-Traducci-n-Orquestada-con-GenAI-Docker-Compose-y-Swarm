@@ -1,0 +1,46 @@
+services:
+  traductor:
+    container_name: app_traductor
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7860:7860"
+    environment:
+      - GENAI_API_KEY=${API_KEY}
+      - MLFLOW_TRACKING_URI=http://mlflow-server:5000
+      - GRADIO_SERVER_PORT=7860
+    depends_on:
+      - mlflow-server
+    networks:
+      - traductor-net
+
+  mlflow-server:
+    image: ghcr.io/mlflow/mlflow:latest
+    container_name: mlflow-server
+    ports:
+      - "5000:5000"
+    command: >
+      mlflow server
+      --host 0.0.0.0
+      --port 5000
+      --backend-store-uri sqlite:////mlflow/mlflow.db
+      --default-artifact-root /mlflow/artifacts
+      --allowed-hosts="*"
+      --cors-allowed-origins="*"
+    environment:
+      - MLFLOW_ENABLE_AUTHENTICATION=false
+
+    volumes:
+      - mlflow-db-data:/mlflow
+      - mlflow-artifacts-data:/mlflow/artifacts
+    networks:
+      - traductor-net
+
+networks:
+  traductor-net:
+    driver: bridge
+
+volumes:
+  mlflow-db-data:
+  mlflow-artifacts-data:

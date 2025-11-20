@@ -1,0 +1,3 @@
+gradio
+mlflow
+google-genai
