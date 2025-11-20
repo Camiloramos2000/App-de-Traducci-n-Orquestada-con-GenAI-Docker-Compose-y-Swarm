@@ -22,7 +22,7 @@ El sistema permite dos modos de ejecución:
 ### 2. Registro de Runs (MLflow)
 
 <div align="center">
-<img src="./screenshots/Run swarm.png" alt="Dashboard de MLflow" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+<img src="img/Run swarm.png" alt="Dashboard de MLflow" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
 <p><em>Dashboard de MLflow mostrando los 'runs' de cada traducción con sus métricas.</em></p>
 </div>
 
