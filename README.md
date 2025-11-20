@@ -245,12 +245,27 @@ Revisar servicios:
 ```
 docker stack services traductor_stack
 ```
+<div align="center">
+<img src="img/service_ls.png" alt="Imagen subida a Docker Hub" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+<p><em>Evidencia de la imagen publicada en el registro de Docker Hub.</em></p>
+</div>
 
 Escalar a 3 réplicas:
 
 ```
 docker service scale traductor_stack_app-traductor=3
 ```
+<div align="center">
+<img src="img/scale.png" alt="Imagen subida a Docker Hub" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+<p><em>Evidencia de la imagen publicada en el registro de Docker Hub.</em></p>
+</div>
+
+Verificamos si se hicieron las replicas:
+
+<div align="center">
+<img src="img/ls_scaled.png" alt="Imagen subida a Docker Hub" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+<p><em>Evidencia de la imagen publicada en el registro de Docker Hub.</em></p>
+</div>
 
 ---
 
