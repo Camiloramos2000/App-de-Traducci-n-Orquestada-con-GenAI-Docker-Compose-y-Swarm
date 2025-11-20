@@ -246,7 +246,7 @@ Revisar servicios:
 docker stack services traductor_stack
 ```
 <div align="center">
-<img src="img/service_ls.png" alt="Imagen subida a Docker Hub" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+<img src="img/Captura de pantalla 2025-11-19 172941.png" alt="Imagen subida a Docker Hub" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
 <p><em>Evidencia de la lista sin cambios Con "scale".</em></p>
 </div>
 
