@@ -13,16 +13,16 @@ El sistema permite dos modos de ejecución:
 ## 📸 Capturas de Pantalla
 
 ### 1. Interfaz de Usuario (Gradio)
-<!-- Pega abajo la URL o ruta de tu imagen de Gradio -->
+
 <div align="center">
-<img src="./screenshots/gradio_demo.png" alt="Interfaz de Traducción Gradio" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+<img src="img/Gradio Swarm.png" alt="Interfaz de Traducción Gradio" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
 <p><em>Interfaz donde el usuario ingresa el texto y selecciona el idioma de destino.</em></p>
 </div>
 
-### 2. Registro de Experimentos (MLflow)
-<!-- Pega abajo la URL o ruta de tu imagen de MLflow -->
+### 2. Registro de Runs (MLflow)
+
 <div align="center">
-<img src="./screenshots/mlflow_tracking.png" alt="Dashboard de MLflow" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+<img src="./screenshots/Run swarm.png" alt="Dashboard de MLflow" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
 <p><em>Dashboard de MLflow mostrando los 'runs' de cada traducción con sus métricas.</em></p>
 </div>
 
@@ -108,7 +108,7 @@ docker push camiloramos2000/traductor-genai:1.0.0
 
 ### Prueba de Imagen en Docker Hub
 <div align="center">
-<img src="./screenshots/dockerhub_proof.png" alt="Imagen subida a Docker Hub" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+<img src="img/imagen_app_dockerHub.png" alt="Imagen subida a Docker Hub" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
 <p><em>Evidencia de la imagen publicada en el registro de Docker Hub.</em></p>
 </div>
 
